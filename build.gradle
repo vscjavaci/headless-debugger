@@ -11,7 +11,7 @@ project.ext.checkstyleVersion = '8.1'
 project.ext.sevntuChecksVersion = '1.24.2'
 
 checkstyle {
-    configFile file("${project.rootDir}/checkstyle.xml")
+    configFile file("../eclipse.jdt.ls/google_checks.xml")
     ignoreFailures = true
     checkstyleMain {
         source = sourceSets.main.allSource
