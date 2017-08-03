@@ -60,10 +60,6 @@ eclipse.classpath.file {
     node.classpathentry.find{
       it.@kind == 'lib' && it.@path.contains('/org.eclipse.jdt.ls.core-0.2.0-SNAPSHOT.jar')
     }.@sourcepath = '../eclipse.jdt.ls/org.eclipse.jdt.ls.core/target/org.eclipse.jdt.ls.core-0.2.0-SNAPSHOT-sources.jar'
-
-    node.classpathentry.find{
-      it.@kind == 'lib' && it.@path.contains('/jdimodel.jar')
-    }.@sourcepath = 'lib/org.eclipse.jdt.debug-3.10.1-sources.jar'
   }
 }
 
