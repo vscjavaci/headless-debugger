@@ -33,7 +33,6 @@ dependencies {
     compile group: 'com.github.javaparser', name: 'javaparser-core', version: '3.2.11'
     compile files("${System.getProperty('java.home')}/../lib/tools.jar")
     compile files("../eclipse.jdt.ls/org.eclipse.jdt.ls.core/target/org.eclipse.jdt.ls.core-0.2.0-SNAPSHOT.jar")
-    compile files("lib/jdimodel.jar")
     compile group: 'commons-cli', name: 'commons-cli', version: '1.3.1'
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
     compile group: 'commons-io', name: 'commons-io', version: '2.5'
