@@ -53,10 +53,6 @@ eclipse.classpath.file {
     def node = xml.asNode()
 
     node.classpathentry.find{
-      it.@kind == 'lib' && it.@path.contains('/tools.jar')
-    }.@sourcepath = 'lib/jdk8u-jdi.zip'
-
-    node.classpathentry.find{
       it.@kind == 'lib' && it.@path.contains('/org.eclipse.jdt.ls.core-0.2.0-SNAPSHOT.jar')
     }.@sourcepath = '../eclipse.jdt.ls/org.eclipse.jdt.ls.core/target/org.eclipse.jdt.ls.core-0.2.0-SNAPSHOT-sources.jar'
   }
