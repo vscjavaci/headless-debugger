@@ -1,0 +1,1 @@
+.\gradlew ls && .\gradlew check && .\gradlew clean test && .\gradlew cleanEclipse eclipse
