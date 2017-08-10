@@ -9,16 +9,15 @@
  *     Microsoft Corporation - initial API and implementation
  *******************************************************************************/
 
-class Main {
-    public static void main(String []args) {
-        System.out.println("test begin");
-        new GenericTest().test();
-        new BoxTest().test();
-        new VariableParameterTest().test();
-        new StaticImportTest().test();
-        new ForLoopTest().test();
-        new MetadataTest().test();
-        new EnumTest().test();
-        System.out.println("test end");
-    }
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.TYPE, ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@interface Note {
+    String author() default "java-developer";
+    String note();
+    int version();
 }

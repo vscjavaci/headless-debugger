@@ -16,5 +16,11 @@ public class ForLoopTest {
             System.out.println(ele);
         }
 
+
+        String fruits[] = {"apple", "orange", "strawberry"};
+
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
     }
 }

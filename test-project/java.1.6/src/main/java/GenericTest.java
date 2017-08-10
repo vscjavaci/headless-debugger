@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-class GenericClass<T> {
+class GenericClass<T extends Number> {
     public T object;
 }
 class GenericMethod {
@@ -22,8 +22,8 @@ class GenericMethod {
 }
 public class GenericTest {
     public void test() {
-        GenericClass<String> stringGenericClass = new GenericClass<String>();
-        stringGenericClass.object = "helloworld";
+        GenericClass<Integer> stringGenericClass = new GenericClass<Integer>();
+        stringGenericClass.object = new Integer(100);
 
         Map<String, String> props1 = new HashMap<String, String>();
         Map<String, String> props2 = new HashMap<String, String>();

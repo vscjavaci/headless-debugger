@@ -8,14 +8,21 @@
  * Contributors:
  *     Microsoft Corporation - initial API and implementation
  *******************************************************************************/
-@interface Remote {
+
+@Note(note = "Finish this class!", version = 1)
+class NoteDemo {
 
 }
+
 public class MetadataTest {
-    public @Remote void ping() {
-        System.out.println("ping");
-    }
     public void test() {
-        ping();
+        Note note = NoteDemo.class.getAnnotation(Note.class);
+        if (note != null) {
+            System.out.println("Author=" + note.author());
+            System.out.println("Note=" + note.note());
+            System.out.println("Version=" + note.version());
+        } else {
+            System.out.println("Note not found.");
+        }
     }
 }
