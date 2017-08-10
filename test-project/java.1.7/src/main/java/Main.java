@@ -1,0 +1,26 @@
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+/*******************************************************************************
+ * Copyright (c) 2017 Microsoft Corporation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Microsoft Corporation - initial API and implementation
+ *******************************************************************************/
+
+class Main {
+    public static void main(String []args) {
+        System.out.println("test begin");
+        Map<String, List<String>> diamondOperator = new TreeMap<>();
+        int thousand =  1_000;
+        new StringSwitchTest().test();
+        new AutomaticResourceManagementTest().test();
+        new MultiCatchTest().test();
+        System.out.println("test end");
+    }
+}
