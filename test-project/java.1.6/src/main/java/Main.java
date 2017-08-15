@@ -19,6 +19,8 @@ class Main {
         new ForLoopTest().test();
         new MetadataTest().test();
         new EnumTest().test();
+        new InnerClassTest().test();
+        new ThreadTester().test();
         System.out.println("test end");
     }
 }
